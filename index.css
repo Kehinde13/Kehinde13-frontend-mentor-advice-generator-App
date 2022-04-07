@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "manrope", san-seriff;
+}
+
+body{
+   background-color: hsl(218, 23%, 16%);
+   position: relative;
+}
+
+.advice {
+    text-align: center;
+    height: 350px;
+    width: 300px;
+    padding: 40px;
+    margin:100px auto; 
+    border-radius: 20px;
+    background-color: hsl(217, 19%, 24%);
+}
+
+h4 {
+    color: hsl(150, 100%, 66%);
+    padding: 20px ;
+    letter-spacing: .2rem;
+}
+
+p {
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+    height: 200px;
+    background: url("images/pattern-divider-mobile.svg") no-repeat;
+    background-position: center bottom;
+}
+
+#dice {
+    background-color: hsl(150, 100%, 66%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 90px;
+    left: 165px;
+    
+}
+
+#dice img {
+    padding: 13px;  
+}
+
+#dice:hover {
+    box-shadow: rgba(82, 225, 169, 0.466) 0px 8px 24px,
+                rgba(82, 255, 169, 0.411) 0px 16px 56px,
+                rgba(82, 255, 169, 0.479) 0px 24px 80px;
+}
+
+@media screen and (min-width: 750px){
+    .advice {
+        height: 400px;
+        width: 500px;
+    }
+
+    p {
+        background: url("images/pattern-divider-desktop.svg") no-repeat;
+        background-position: center bottom;
+    }
+
+    #dice {
+        bottom: 90px;
+        left: 660px;
+    }
+
+}
